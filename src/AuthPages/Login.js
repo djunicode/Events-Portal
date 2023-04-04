@@ -1,20 +1,5 @@
-// import { Button } from '@chakra-ui/react'
-// import React from 'react'
-// import Nav from './Navbar'
-
-// function Login() {
-//   return (
-//     <div>
-//       <Nav/>
-
-//     </div>
-//   )
-// }
-
-// export default Login
 import {
     Button,
-    Checkbox,
     Flex,
     FormControl,
     FormLabel,
@@ -22,7 +7,6 @@ import {
     Input,
     Link,
     Stack,
-    Image,
     Text,
     Divider,
     InputRightElement,
@@ -50,10 +34,6 @@ export default function SplitScreen() {
                             <FormLabel>Email address</FormLabel>
                             <Input type="email" placeholder='Enter your email address' />
                         </FormControl>
-                        {/* <FormControl id="password">
-                            <FormLabel>Password</FormLabel>
-                            <Input type="password" placeholder='Enter your password' />
-                        </FormControl> */}
                         <FormControl id="password" >
                             <FormLabel>Password</FormLabel>
                             <InputGroup>

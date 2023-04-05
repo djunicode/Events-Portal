@@ -1,8 +1,9 @@
 import React from 'react'
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import { ChakraProvider } from '@chakra-ui/react'
-import SplitScreen from './AuthPages/Login'
 import './App.css'
+import Login from './AuthPages/Login'
+import Register from './AuthPages/Register'
 
 
 function App() {
@@ -14,7 +15,10 @@ function App() {
         <Route path='/' element={<p>Welcome</p>}/>
       </Routes>
       <Routes>
-        <Route path='/login' element={<SplitScreen/>}/>
+        <Route path='/login' element={<Login/>}/>
+      </Routes>
+      <Routes>
+        <Route path='/register' element={<Register/>}/>
       </Routes>
 
     </Router>

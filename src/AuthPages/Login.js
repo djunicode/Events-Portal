@@ -20,7 +20,7 @@ import { useState } from 'react';
 import { FcGoogle } from 'react-icons/fc';
 import { FaFacebook } from 'react-icons/fa';
 
-export default function SplitScreen() {
+export default function Login() {
     const [showPassword, setShowPassword] = useState(false);
     return (
         <>

@@ -1,6 +1,14 @@
 .sidelog{
   background: linear-gradient(#8EECD3,#9AE791);
 }
+.social{
+  height: 32px;
+  width: 30px;
+}
+.socialInsta{
+  height: 55px;
+  width: 30px;
+}
 /* Responsive */
 @media (max-width:800px){
   .sidelog{

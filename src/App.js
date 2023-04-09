@@ -4,6 +4,7 @@ import { ChakraProvider } from '@chakra-ui/react'
 import './App.css'
 import Login from './AuthPages/Login'
 import Register from './AuthPages/Register'
+import Footer from './Footer/Footer'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Routes>
         <Route path='/register' element={<Register/>}/>
       </Routes>
+      <Footer/>
 
     </Router>
     </ChakraProvider>

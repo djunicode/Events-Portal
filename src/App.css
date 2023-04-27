@@ -13,7 +13,7 @@ border-radius: 0px 15px 15px 0px;
 }
 
 /* Commitee card */
-/* this card is inspired form this - https://georgefrancis.dev/ */
+
 
 .card {
   --border-radius: 0.75rem;
@@ -25,6 +25,7 @@ border-radius: 0px 15px 15px 0px;
   cursor: pointer;
   border-radius: var(--border-radius);
   background: #f1f1f3;
+  margin-left: 25px;
   box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 3%);
   position: relative;
 }
@@ -52,8 +53,10 @@ border-radius: 0px 15px 15px 0px;
 
 .card .card__arrow {
   position: absolute;
-  background: var(--primary-color);
+  /* background: var(--primary-color); */
+  background: linear-gradient(62.97deg, #F54B64 29.17%, #F78361 100%);
   padding: 0.4rem;
+  color: white;
   border-top-left-radius: var(--border-radius);
   border-bottom-right-radius: var(--border-radius);
   bottom: 0;
@@ -73,10 +76,127 @@ border-radius: 0px 15px 15px 0px;
 
 .card:hover .card__arrow {
   background: white;
+  color: black;
 }
 
 .card:hover .card__arrow svg {
   transform: translateX(3px);
+}
+
+.scrolling-wrapper-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 20px;
+
+  /* .card {
+    flex: 0 0 auto;
+  } */
+}
+.commitees{
+  margin-left: 25px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrolling-wrapper-flexbox::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrolling-wrapper-flexbox {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* upcoming card css */
+.cookie-card {
+  width: 320px;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-left: 25px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, .05);
+}
+
+.title {
+  font-weight: 600;
+  color: rgb(31 41 55);
+}
+
+.description {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgb(75 85 99);
+}
+
+.description a {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246);
+}
+
+.description a:hover {
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  -moz-column-gap: 1rem;
+  column-gap: 1rem;
+  flex-shrink: 0;
+}
+
+.pref {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgb(31 41 55 );
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  transition: all .3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  background-color: transparent;
+}
+
+.pref:hover {
+  color: rgb(156 163 175);
+}
+
+.pref:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.accept {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  /* background-color: rgb(17 24 39); */
+  background-color: #fff;
+  color: #000000;
+  font-weight: 500;
+  /* border-radius: 0.5rem; */
+  /* color: #fff; */
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  /* border: none; */
+  border: 0.822362px solid #000000;
+border-radius: 19.7367px;
+  transition: all .15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.accept:hover {
+  background-color: rgb(55 65 81);
+  color: #fff;
+}
+
+.accept:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 /* Responsive */
 @media (max-width:800px){
@@ -85,5 +205,14 @@ border-radius: 0px 15px 15px 0px;
   }
   .signupbtn{
     margin-bottom: 20px;
+  }
+  .commitees{
+    margin-left: 4px;
+  }
+  .card{
+    margin-left: 12px;
+  }
+  .cookie-card{
+    margin-left: 12px;
   }
 }

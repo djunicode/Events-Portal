@@ -88,7 +88,7 @@ export default function Login() {
                         </Stack>
                     </Stack>
                 </Flex>
-                <Flex flex={1} className='sidelog' color={'black'} justifyContent={'center'} alignItems={'center'} borderRadius={' 15px 0px 0px 15px'} flexDirection={'column'}>
+                <Flex flex={1} className='sidelog' color={'white'} justifyContent={'center'} alignItems={'center'} borderRadius={' 15px 0px 0px 15px'} flexDirection={'column'}>
                     <Heading>Welcome Back</Heading>
                     <br />
                     <Text textAlign={'center'} fontWeight={500} fontSize={'19.62px'} lineHeight={'23.74px'}>"Are you tired of missing out on all the fantastic events?

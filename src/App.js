@@ -5,6 +5,8 @@ import './App.css'
 import Login from './AuthPages/Login'
 import Register from './AuthPages/Register'
 import Footer from './Footer/Footer'
+import Home from './Pages/Home'
+import CommiteeAndEvent from './CommiteeAndEvent/CommiteeAndEvent'
 
 
 function App() {
@@ -13,13 +15,16 @@ function App() {
     <Router>
       
       <Routes>
-        <Route path='/' element={<p>Welcome</p>}/>
+        <Route path='/' element={<Home/>}/>
       </Routes>
       <Routes>
         <Route path='/login' element={<Login/>}/>
       </Routes>
       <Routes>
         <Route path='/register' element={<Register/>}/>
+      </Routes>
+      <Routes>
+        <Route path='/comandevent' element={<CommiteeAndEvent/>}/>
       </Routes>
       <Footer/>
 

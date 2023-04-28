@@ -117,7 +117,7 @@ import {
                     bg: 'whiteAlpha.300',
                   }}
                 />
-                <Button colorScheme='green' backgroundColor={'green.400'}>Join</Button>
+                <Button colorScheme='green' backgroundColor={'#303C57'} _hover={{backgroundColor:'#303C57'}}>Join</Button>
               </Stack>
             </Stack>
           </SimpleGrid>

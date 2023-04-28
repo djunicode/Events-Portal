@@ -72,8 +72,8 @@ export default function Nav() {
                   </Center>
                   <br />
                   <MenuDivider />
-                  <MenuItem>Your Servers</MenuItem>
-                  <MenuItem>Account Settings</MenuItem>
+                  <MenuItem>Link 1</MenuItem>
+                  <MenuItem>Link 2</MenuItem>
                   <MenuItem>Logout</MenuItem>
                 </MenuList>
               </Menu>

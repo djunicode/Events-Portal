@@ -4,7 +4,7 @@ import React from 'react'
 function CommiteeCards(props) {
     return (
         <div>
-            <div class="card">
+            <div class="card" style={{backgroundColor:'#f1f1f3',width:'210px',marginLeft:'25px'}}>
                 <div className="cardimage">
                     <Image
                         h={'120px'}

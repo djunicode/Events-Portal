@@ -8,6 +8,7 @@ import Footer from './Footer/Footer'
 import Home from './Pages/Home'
 import CommiteeAndEvent from './CommiteeAndEvent/CommiteeAndEvents'
 import CommitteeDetail from './CommiteeAndEvent/CommitteeDetail'
+import Favourite from './Navbar/Favourite'
 
 
 function App() {
@@ -26,6 +27,9 @@ function App() {
         </Routes>
         <Routes>
           <Route path='/comandevent' element={<CommiteeAndEvent />} />
+        </Routes>
+        <Routes>
+          <Route path='/fav' element={<Favourite/>} />
         </Routes>
         <Routes>
           <Route path='/CommitteeDetail' element={<CommitteeDetail />} />

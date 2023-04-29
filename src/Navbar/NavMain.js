@@ -299,6 +299,6 @@ const NAV_ITEMS = [
   },
   {
     label: 'Favourite',
-    href: '#',
+    href: '/fav',
   },
 ];

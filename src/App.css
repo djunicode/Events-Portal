@@ -12,6 +12,12 @@ border-radius: 0px 15px 15px 0px;
   width: 30px;
 }
 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 /* Commitee card */
 
 
@@ -198,6 +204,71 @@ border-radius: 19.7367px;
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
+/* fav cards */
+.cardfav {
+  width: 525px;
+  height: 122px;
+  /* background: rgb(38, 38, 38); */
+  box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.333);
+  margin-left: 48px;
+  display: flex;
+  
+}
+
+.imge {
+  height: 122px;
+  background-color: white;
+  flex-direction: column;
+}
+
+.imge .Usericon {
+  /* background-color: #414141; */
+  transform: translateX(10px) translateY(10px);
+  width: 140px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.imge .UserName {
+  background-color: #414141;
+  width: 60px;
+  height: 15px;
+  margin-left: 60px;
+  border-width: 10px;
+  border-radius: 5px;
+  border-color: #262626;
+  color: #262626;
+  font-size: 15px;
+  font-weight: bold;
+  transform: translateX(70px) translateY(-35px);
+}
+
+.imge .Id {
+  background-color: #414141;
+  width: 100px;
+  height: 15px;
+  margin-left: 60px;
+  border-width: 10px;
+  border-radius: 5px;
+  border-color: #262626;
+  color: #262626;
+  font-size: 15px;
+  font-weight: bold;
+  transform: translateX(70px) translateY(-25px);
+}
+
+.Description {
+  border-color: #141414;
+  background-color: #414141;
+  transform: translate(5px, 6px);
+  width: 180px;
+  margin-left: 60px;
+  height: 130px;
+  border-radius: 5px;
+}
+.favhead{
+  margin-left: 48px;
+}
 /* Responsive */
 @media (max-width:800px){
   .sidelog{
@@ -214,5 +285,12 @@ border-radius: 19.7367px;
   }
   .cookie-card{
     margin-left: 12px;
+  }
+  .favhead{
+    margin-left: 0px;
+  }
+  .cardfav{
+    margin-left: 0px;
+    width: 100%;
   }
 }

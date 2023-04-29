@@ -13,8 +13,10 @@ import {
     Center,
     InputGroup,
     Box,
+    Image,
     useToast
 } from '@chakra-ui/react';
+import Peope from '../utils/people.png'
 // import { useToast } from "@chakra-ui/core";
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
 import Nav from './Navbar'
@@ -29,12 +31,21 @@ export default function Register() {
         <>
             <Nav />
             <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
-                <Flex flex={1} className='sidelog' color={'black'} justifyContent={'center'} alignItems={'center'} borderRadius={' 0px 15px 15px 0px'} flexDirection={'column'}>
+                <Flex flex={1} className='sidelog' color={'white'} justifyContent={'center'} alignItems={'center'} borderRadius={' 0px 15px 15px 0px'} flexDirection={'column'} >
                     <Heading>Hello Friends..</Heading>
                     <br />
                     <Text textAlign={'center'} fontWeight={500} fontSize={'19.62px'} lineHeight={'23.74px'}>"Are you tired of missing out on all the fantastic events?
                         <br />
                         Sign up now and never miss a beat again!"</Text>
+                    <br />
+                    <br />
+                    <Image
+                        boxSize='250px'
+                        objectFit='cover'
+                        src={Peope}
+                        alt='People'
+                        background={'transparent'}
+                    />
                     <br />
                     <Button background={'#FFFFFF'} border={'1.23927px solid #0A2D28'} borderRadius={'48px'} width={'232.98px'} height={'60px'} fontSize={'24.9323px'} color={'black'} className='signupbtn'>Sign In</Button>
                 </Flex>
@@ -46,8 +57,8 @@ export default function Register() {
                             <Input type="text" placeholder='Enter your Name' />
                         </FormControl>
                         <FormControl id="email">
-                            <FormLabel>Email address</FormLabel>
-                            <Input type="email" placeholder='Enter your email address' />
+                            <FormLabel>SAP ID</FormLabel>
+                            <Input type="number" placeholder='Enter your SAP ID' />
                         </FormControl>
                         <FormControl id="password" >
                             <FormLabel>Password</FormLabel>
@@ -71,7 +82,7 @@ export default function Register() {
                                 justify={'right'}>
                                 <Link color={'blue.500'}>Forgot password?</Link>
                             </Stack>
-                            <Button colorScheme={'green'} variant={'solid'} onClick={() =>
+                            <Button backgroundColor={'#CE7777'} color={'white'} _hover={{ color: 'black' }} variant={'solid'} onClick={() =>
                                 toast({
                                     title: "Account created.",
                                     description: "We've created your account for you.",

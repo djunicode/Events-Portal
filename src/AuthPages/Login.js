@@ -12,13 +12,15 @@ import {
     InputRightElement,
     Center,
     InputGroup,
-    Box
+    Box,
+    Image
 } from '@chakra-ui/react';
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
 import Nav from './Navbar'
 import { useState } from 'react';
 import { FcGoogle } from 'react-icons/fc';
 import { FaFacebook } from 'react-icons/fa';
+import Peope from '../utils/people.png'
 
 export default function Login() {
     const [showPassword, setShowPassword] = useState(false);
@@ -31,8 +33,8 @@ export default function Login() {
                     <Stack spacing={4} w={'full'} maxW={'md'}>
                         <Heading fontSize={'5xl'} textAlign={'center'}>Sign in </Heading>
                         <FormControl id="email">
-                            <FormLabel>Email address</FormLabel>
-                            <Input type="email" placeholder='Enter your email address' />
+                            <FormLabel>SAP ID</FormLabel>
+                            <Input type="number" placeholder='Enter your SAP ID' />
                         </FormControl>
                         <FormControl id="password" >
                             <FormLabel>Password</FormLabel>
@@ -56,7 +58,7 @@ export default function Login() {
                                 justify={'right'}>
                                 <Link color={'blue.500'}>Forgot password?</Link>
                             </Stack>
-                            <Button colorScheme={'green'} variant={'solid'}>
+                            <Button backgroundColor={'#CE7777'} color={'white'} _hover={{ color: 'black' }} variant={'solid'}>
                                 Sign in
                             </Button>
                             <Flex align="center" direction={'row'}>
@@ -94,6 +96,15 @@ export default function Login() {
                     <Text textAlign={'center'} fontWeight={500} fontSize={'19.62px'} lineHeight={'23.74px'}>"Are you tired of missing out on all the fantastic events?
                         <br />
                         Sign up now and never miss a beat again!"</Text>
+                    <br />
+                    <br />
+                    <Image
+                        boxSize='250px'
+                        objectFit='cover'
+                        src={Peope}
+                        alt='People'
+                        background={'transparent'}
+                    />
                     <br />
                     <Button background={'#FFFFFF'} border={'1.23927px solid #0A2D28'} borderRadius={'48px'} width={'232.98px'} height={'60px'} fontSize={'24.9323px'} color={'black'} className='signupbtn'>Sign Up</Button>
                 </Flex>

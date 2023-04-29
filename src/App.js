@@ -4,7 +4,7 @@ import { ChakraProvider } from '@chakra-ui/react'
 import './App.css'
 import Login from './AuthPages/Login'
 import Register from './AuthPages/Register'
-// import Footer from './Footer/Footer'
+import Footer from './Footer/Footer'
 import Home from './Pages/Home'
 import CommiteeAndEvent from './CommiteeAndEvent/CommiteeAndEvents'
 import CommitteeDetail from './CommiteeAndEvent/CommitteeDetail'
@@ -31,7 +31,7 @@ function App() {
           <Route path='/CommitteeDetail' element={<CommitteeDetail />} />
         </Routes>
 
-        {/* <Footer /> */}
+        <Footer />
 
       </Router>
     </ChakraProvider>

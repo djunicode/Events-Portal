@@ -5,10 +5,11 @@ import './App.css'
 import Login from './AuthPages/Login'
 import Register from './AuthPages/Register'
 import Footer from './Footer/Footer'
-import Home from './Pages/Home'
+// import Home from './Pages/Home'
 import CommiteeAndEvent from './CommiteeAndEvent/CommiteeAndEvents'
 import CommitteeDetail from './CommiteeAndEvent/CommitteeDetail'
 import Favourite from './Navbar/Favourite'
+import Participant from './CommiteeAndEvent/Participants/Participant'
 
 
 function App() {
@@ -16,8 +17,11 @@ function App() {
     <ChakraProvider>
       <Router>
 
-        <Routes>
+        {/* <Routes>
           <Route path='/' element={<Home />} />
+        </Routes> */}
+        <Routes>
+          <Route path='/' element={<Participant/>} />
         </Routes>
         <Routes>
           <Route path='/login' element={<Login />} />

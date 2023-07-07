@@ -1,0 +1,17 @@
+.sharelist{
+    /* background-color: aqua; */
+    width: 230px;
+  height: 122px;
+  margin-left: 250px;
+  text-align: center;
+  display: flex;
+  font-size: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (max-width:800px){
+    .sharelist{
+        margin-left: 125px;
+    }
+}

@@ -21,9 +21,14 @@ import { useState } from 'react';
 import { FcGoogle } from 'react-icons/fc';
 import { FaFacebook } from 'react-icons/fa';
 import Peope from '../utils/people.png'
+import { useNavigate } from 'react-router-dom';
 
 export default function Login() {
     const [showPassword, setShowPassword] = useState(false);
+    const nav = useNavigate()
+    const navifun = ()=>{
+        nav('/register')
+    }
     return (
         <>
             <Nav />
@@ -106,7 +111,7 @@ export default function Login() {
                         background={'transparent'}
                     />
                     <br />
-                    <Button background={'#FFFFFF'} border={'1.23927px solid #0A2D28'} borderRadius={'48px'} width={'232.98px'} height={'60px'} fontSize={'24.9323px'} color={'black'} className='signupbtn'>Sign Up</Button>
+                    <Button background={'#FFFFFF'} border={'1.23927px solid #0A2D28'} borderRadius={'48px'} width={'232.98px'} height={'60px'} fontSize={'24.9323px'} color={'black'} className='signupbtn' onClick={navifun}>Sign Up</Button>
                 </Flex>
             </Stack>
         </>

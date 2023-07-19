@@ -23,10 +23,15 @@ import Nav from './Navbar'
 import { useState } from 'react';
 import { FcGoogle } from 'react-icons/fc';
 import { FaFacebook } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 
 export default function Register() {
     const [showPassword, setShowPassword] = useState(false);
     const toast = useToast();
+    const nav = useNavigate();
+    const navifun = () => {
+        nav('/login')
+    }
     return (
         <>
             <Nav />
@@ -47,7 +52,7 @@ export default function Register() {
                         background={'transparent'}
                     />
                     <br />
-                    <Button background={'#FFFFFF'} border={'1.23927px solid #0A2D28'} borderRadius={'48px'} width={'232.98px'} height={'60px'} fontSize={'24.9323px'} color={'black'} className='signupbtn'>Sign In</Button>
+                    <Button background={'#FFFFFF'} border={'1.23927px solid #0A2D28'} borderRadius={'48px'} width={'232.98px'} height={'60px'} fontSize={'24.9323px'} color={'black'} className='signupbtn' onClick={navifun}>Sign In</Button>
                 </Flex>
                 <Flex p={8} flex={1} align={'center'} justify={'center'}>
                     <Stack spacing={4} w={'full'} maxW={'md'}>

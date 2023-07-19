@@ -1,0 +1,97 @@
+.outline{
+padding: 50px;
+margin: 20px;
+}
+.heading{
+    font-weight: bold;
+    font-size: 3rem;
+}
+.left-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.image-box{
+    display: flex;
+    
+    gap: 10px;
+    gap: 10px 20px; /* row-gap column gap */
+    row-gap: 10px;
+    column-gap: 20px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    gap: 10px 20px; /* row-gap column gap */
+    row-gap: 10px;
+    column-gap: 20px;
+}
+
+/* reviews ection */
+
+.card {
+    width: 50vw;
+    margin: auto;
+    margin-bottom: 5px;
+    background-color: rgb(0, 0, 0);
+  }
+  .card-title {
+    margin-bottom: 20px;
+    font-size: x-large;
+    font-weight: 800;
+    text-align: center;
+  }
+  .reviews-top {
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+  }
+  .user-details {
+    align-items: center;
+    display: flex;
+  }
+  
+  .avatar {
+    border-radius: 90px;
+    width: 60px;
+    height: 60px;
+    margin: 2px;
+  }
+  h6 {
+    font-size: larger;
+    font-weight: 700;
+    margin-right: 10px;
+  }
+  .reviews-form {
+    padding: 5px;
+    width: 50vw;
+    border-radius: 20px;
+  }
+  
+  .form-container {
+    padding: 20px;
+    
+    width: 60%;
+    border-radius: 20px;
+    margin: auto;
+  }
+  .submit-btn{
+    background: #CE7777;
+  }
+  .com-footer{
+    display: flex;
+    align-content: center;
+    gap: 50px;
+    gap: 50px 50px; /* row-gap column gap */
+    row-gap: 250px;
+    
+    margin-left: 550px;
+    /* padding-bottom: 10px; */
+    padding-top: 50px;
+  }
+  .card1{
+    height: 120px;
+    width: 180px;
+    background-color: rgb(171, 122, 207);
+    
+  }
